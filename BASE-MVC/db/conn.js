@@ -1,3 +1,5 @@
+//Criando e exportando a conexão com o banco com o Sequelize
+
 const {Sequelize} = require("sequelize")
 
 const sequelize = new Sequelize("cursonodemvc", "root", "", {

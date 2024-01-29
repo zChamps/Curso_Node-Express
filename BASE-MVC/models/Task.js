@@ -1,3 +1,5 @@
+//Criando e exportando a tabela no BD
+
 const { DataTypes } = require("sequelize");
 const db = require("../db/conn")
 

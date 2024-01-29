@@ -6,8 +6,6 @@ const app = express()
 //Importando a conexão com o BD
 const conn = require("./db/conn")
 
-const Task = require("./models/Task")
-
 const tasksRoutes = require("./routes/tasksRoutes")
 
 //Setando a engine com oo handlebars
@@ -21,6 +19,7 @@ app.use(
   }),
 )
 
+//Definindo o arquivo de rotas para as rotas a partir de /tasks
 app.use("/tasks", tasksRoutes)
 
 
