@@ -185,7 +185,8 @@ app.get("/", async (req, res) => {
 
 //Criando tabela caso não exista e mantendo a conexao
 conn
-  // .sync({ force: true })   -- Deleta todos os dados da tabela quando inicia
+  // .sync({ force: true })   -- Atualiza as tabelas do banco deletando todos os dados da tabela quando inicia
+  // .sync({ alter: true })    - Atualiza as tabelas do banco, sem perca de dados
   .sync()
   .then(() => {
     app.listen(3000)
